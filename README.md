@@ -8,13 +8,31 @@ This library answers the question no one asked:
 
 No dependecies to other python packages necessary to decrypt messages and free for use and further adaption (MIT license).
 
-Includes a rudimental gui via tkinter.
-
 # Usage
 ```
-from enigma import *
+from enigma import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
+from enigma import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
+from enigma import Enigma
+from enigma import Plugboard
+
+EnigmaMachine = Enigma(reflector=REFLECTOR_B, 
+                       left_rotor=ROTOR_III, 
+                       middle_rotor=ROTOR_II, 
+                       right_rotor=ROTOR_I, 
+                       rotor_positions="16 10 1",
+                       ring_positions="3 1 17",
+                       plugboard=Plugboard("CE KL FP MD")
+                       )
+
+x=EnigmaMachine.encipher('Jeder Mensch sollte wissen, wie man Enigma-Maschine verwendet.')
+
+print('Result is:')
+print(x)
 ```
 
+Result is:
+
+LVUBS FKTKJZ EXDYQP XFYEHV, AZS BVR WBGXXW-CTYXLRDK LMTLDALNQ.
 
 # Resources & Acknowledgment:
 https://web.archive.org/web/20060720040135/http://members.fortunecity.com/jpeschel/gillog1.htm

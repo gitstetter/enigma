@@ -1,8 +1,8 @@
 import pytest
-from enigma.rotor import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
-from enigma.reflector import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
-from enigma.enigma import Enigma
-from enigma.plugboard import Plugboard
+from ..src.rotor import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
+from ..src.reflector import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
+from ..src.enigma import Enigma
+from ..src.plugboard import Plugboard
 
 @pytest.fixture
 def EnigmaMachineRotorRingPositions():

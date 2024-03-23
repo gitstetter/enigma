@@ -1,4 +1,4 @@
-from enigma.plugboard import *
+from ..src.plugboard import *
 import pytest
 
 

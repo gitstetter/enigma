@@ -1,4 +1,4 @@
-from enigma.reflector import *
+from ..src.reflector import *
 import pytest
 
 def test_reflectorA_encipherZ():

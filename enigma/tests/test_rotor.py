@@ -1,4 +1,4 @@
-from enigma.rotor import *
+from ..src.rotor import *
 import pytest
 
 
