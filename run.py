@@ -1,7 +1,7 @@
-from enigma import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
-from enigma import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
-from enigma import Enigma
-from enigma import Plugboard
+from enigmator import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
+from enigmator import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
+from enigmator import Enigma
+from enigmator import Plugboard
 
 EnigmaMachine = Enigma(reflector=REFLECTOR_B, 
                        left_rotor=ROTOR_III, 
