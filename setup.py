@@ -5,10 +5,10 @@ with open("README.md", "r") as f:
 
 setup(
     name="enigmator",
-    version="1.0.2",
+    version="1.0.4",
     description="Package for decrypting messages with an enigma machine",
-    package_dir={"": "enigmator"},
-    packages=find_packages(where="enigmator"),
+    package_dir={"": "app"},
+    packages=find_packages(where="app"),
     long_description=long_description,
     long_description_content_type="text/markdown",
     url='https://github.com/gitstetter/enigma',

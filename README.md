@@ -10,10 +10,10 @@ No dependecies to other python packages necessary to decrypt messages and free f
 
 # Usage
 ```
-from enigmator import ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V
-from enigmator import REFLECTOR_A, REFLECTOR_B, REFLECTOR_C
-from enigmator import Enigma
-from enigmator import Plugboard
+from enigmator import (ROTOR_I, ROTOR_II, ROTOR_III, ROTOR_IV, ROTOR_V,
+                       REFLECTOR_A, REFLECTOR_B, REFLECTOR_C,
+                       Enigma,
+                       Plugboard)
 
 EnigmaMachine = Enigma(reflector=REFLECTOR_B, 
                        left_rotor=ROTOR_III, 
@@ -33,6 +33,13 @@ print(x)
 Result is:
 
 LVUBS FKTKJZ EXDYQP XFYEHV, AZS BVR WBGXXW-CTYXLRDK LMTLDALNQ.
+
+
+To decipher back to plain text, just pass the decypted text back into the EnigmaMachine:
+
+```
+EnigmaMachine.encipher('LVUBS FKTKJZ EXDYQP XFYEHV, AZS BVR WBGXXW-CTYXLRDK LMTLDALNQ.')
+```
 
 # Resources & Acknowledgment:
 https://web.archive.org/web/20060720040135/http://members.fortunecity.com/jpeschel/gillog1.htm
